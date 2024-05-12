@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+#key {
+  color: green;
+  font-size: 16px;
+  position: relative;
+  top: 10px;
+}
+
+form {
+  padding: 20px;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(171, 119, 22), #9e6a18);
+
+  background-size: cover;
+  width: auto;
+  height: auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 10pt;
+  font-family: "Spartan";
+  color: #2A293E;
+}
+
+
+/* ////////////////////////////////////// */
+/* Global styles */
+
+
+  
+  em {
+    color: green;
+    font-style: normal;
+  }
+  
+  /* Navigation styles */
+  
+  nav {
+    background-color: #2A293E;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover {
+    background-color: #1a1a1a;
+  }
+  
+
+  
+  /* Footer styles */
+  
+  footer {
+    background-color: #2A293E;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+/* ////////////////////////////////////// */
+
+
+
+.contact-us {
+
+  background: linear-gradient(to bottom right, #8ac9ff, #f6a5c0);
+  padding: 50px 100px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+  font-family: Arial, sans-serif;
+}
+label {
+  margin-bottom: 10px;
+}
+
+
+input {
+  margin-bottom: 24pt;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 24pt;
+  font-style: italic;
+  margin: 0 0 0.5em 0;
+}
+
+span {
+  font-size: 8pt;
+}
+
+em {
+  color: #f35327;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  border: none;
+  border: 2px solid rgb(200, 139, 33);
+  border-radius: 2px;
+  background: #f8f4e5;
+  padding-left: 5px;
+  outline: none;
+}
+
+
+input:focus,
+textarea:focus {
+  border: 1px solid #ace4d2;
+}
+
+textarea {
+  resize: none;
+  width: 120%;
+}
+
+#image {
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px 5px gray;
+  width: 60px;
+  padding: 20px;
+  font-weight: 400;
+  padding-bottom: 0px;
+  height: 40px;
+  user-select: none;
+  text-decoration: line-through;
+  font-style: italic;
+  font-size: x-large;
+  border: green 2px solid;
+  margin-left: 10px;
+}
+
+#user-input {
+  box-shadow: 5px 5px 5px 5px gray;
+  width: 50%;
+  margin-right: 10px;
+  padding: 10px;
+  padding-bottom: 0px;
+  height: 40px;
+  border: green 0px solid;
+}
+
+.inline {
+  display: inline-block;
+}
+
+#btn {
+  display: block;
+  float: right;
+  line-height: 24pt;
+  padding: 0 20px;
+  margin-top: 60px;
+  border: none;
+  background: #631bc8;
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+}
+
+#btn:hover {
+  color: #100f0f;
+  border-bottom: 2px solid #100f0f;
+}
+
+::selection {
+  background: #ffc7b8;
+}
+
+
+
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus {
+    border: 1px solid #6bd4b1;
+    -webkit-text-fill-color: #2A293E;
+    -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border: 1px solid #d4b16b;
+    animation-name: input-focus;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes input-focus {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+
+  

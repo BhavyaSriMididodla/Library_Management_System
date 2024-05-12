@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content="718300745465-e8t9bbt8mt5aupc5mretpv4sjg3rhg5f.apps.googleusercontent.com">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Login to BookWorld</h1>
+    </div>
+    <form action="index.html" method="post">
+      <label for="">Email or Username</label>
+      <input type="text" name="" id="">
+      <label for="">Password</label>
+      <input type="password" name="" id="">
+      <p><a href="forgot.html">I forgot my password</a></p>
+      <input type="submit" value="Log In">
+    </form>
+    <div class="footer">
+      <h3>Login with another account</h3>
+      <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+      <a href="signup.html">Not a member yet? <strong>Sign up free</strong></a>
+    </div>
+  </div>
+</body>
+</html>
